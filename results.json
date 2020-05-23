@@ -1,0 +1,58 @@
+[
+  {
+    "uri": "features/cash_withdrawal.feature",
+    "id": "cash-withdrawal",
+    "keyword": "Feature",
+    "name": "Cash Withdrawal",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "cash-withdrawal;successful-withdrawal-from-an-account-in-credit",
+        "keyword": "Scenario",
+        "name": "Successful withdrawal from an account in credit",
+        "description": "",
+        "line": 2,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I have deposited $100 from my account",
+            "line": 3,
+            "match": {
+              "location": "features/step_definitions/steps.rb:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5783000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I withdraw $20",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/steps.rb:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40100
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "$20 should be dispensed",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/steps.rb:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79100
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
